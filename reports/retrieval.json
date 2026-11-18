@@ -1,0 +1,20 @@
+{
+ "bm25": {
+  "recall@1": 0.793,
+  "recall@3": 0.912,
+  "recall@5": 0.933,
+  "recall@10": 0.962
+ },
+ "dense": {
+  "recall@1": 0.715,
+  "recall@3": 0.868,
+  "recall@5": 0.914,
+  "recall@10": 0.957
+ },
+ "hybrid": {
+  "recall@1": 0.801,
+  "recall@3": 0.93,
+  "recall@5": 0.955,
+  "recall@10": 0.984
+ }
+}

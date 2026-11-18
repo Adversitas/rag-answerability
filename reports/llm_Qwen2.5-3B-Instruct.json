@@ -1,0 +1,111 @@
+{
+ "model": "Qwen/Qwen2.5-3B-Instruct",
+ "retriever": "hybrid",
+ "n": 300,
+ "llm": {
+  "em": 0.5733333333333334,
+  "f1": 0.6031683654509741,
+  "has_ans_f1": 0.6730033975686149,
+  "no_ans_acc": 0.5333333333333333,
+  "hallucination_rate": 0.4666666666666667,
+  "answer_rate": 0.6866666666666666
+ },
+ "median_latency_s": 17.231194699998014,
+ "reader+gate_same_questions": {
+  "em": 0.7866666666666666,
+  "f1": 0.8070319738740792,
+  "has_ans_f1": 0.7540639477481583,
+  "no_ans_acc": 0.86,
+  "hallucination_rate": 0.14,
+  "answer_rate": 0.49333333333333335
+ },
+ "gate+llm": {
+  "em": 0.73,
+  "f1": 0.7547556670382757,
+  "has_ans_f1": 0.6028446674098847,
+  "no_ans_acc": 0.9066666666666666,
+  "hallucination_rate": 0.09333333333333334,
+  "answer_rate": 0.43666666666666665
+ },
+ "gate+llm_share_of_llm_calls": 0.49333333333333335,
+ "examples": [
+  {
+   "question": "When did Warsaw become the capital of the Kingdom of Poland?",
+   "gold": [
+    "1596"
+   ],
+   "llm": ""
+  },
+  {
+   "question": "Combustion is caused by an oxidant and a fuel. What role does oxygen play in combustion?",
+   "gold": [
+    "Oxygen is the oxidant",
+    "oxidant",
+    "the oxidant"
+   ],
+   "llm": "oxidant"
+  },
+  {
+   "question": "What did Mongols worship?",
+   "gold": [
+    "Eternal Heaven",
+    "the Eternal Heaven"
+   ],
+   "llm": "Eternal Heaven"
+  },
+  {
+   "question": "What is Donald Davies credited with",
+   "gold": [
+    "Davies is credited with coining the modern name packet switching and inspiring numerous packet switching networks in Europe",
+    "coining the modern name packet switching",
+    "coining the modern name packet switching and inspiring numerous packet switching networks"
+   ],
+   "llm": "packet switching"
+  },
+  {
+   "question": "When had the plague reached Alexandria?",
+   "gold": [
+    "1347",
+    "autumn 1347"
+   ],
+   "llm": "autumn 1347"
+  },
+  {
+   "question": "What has an equivalence between mass and space-time?",
+   "gold": [
+    "General relativity"
+   ],
+   "llm": "General relativity"
+  },
+  {
+   "question": "What locations are headquartered at the California University at Irvine?",
+   "gold": [],
+   "llm": ""
+  },
+  {
+   "question": "What did Warner Sinback offer?",
+   "gold": [],
+   "llm": "job"
+  },
+  {
+   "question": "What wasn't Marin's orders?",
+   "gold": [],
+   "llm": "protect the King's land in the Ohio Valley"
+  },
+  {
+   "question": "During withdrawal from Fort William Henry, what did some Indian enemies of French do?",
+   "gold": [],
+   "llm": "attacked the British column"
+  },
+  {
+   "question": "What entity does not enforce the Charter of Fundamental Rights of the European Union?",
+   "gold": [],
+   "llm": ""
+  },
+  {
+   "question": "What was Tugh Temur not known for?",
+   "gold": [],
+   "llm": ""
+  }
+ ]
+}
